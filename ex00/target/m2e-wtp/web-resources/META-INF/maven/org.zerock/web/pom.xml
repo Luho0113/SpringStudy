@@ -156,6 +156,16 @@
     		<artifactId>spring-test</artifactId>
    			<version>${org.springframework-version}</version>
 		</dependency>
+		
+		<!-- 롬복 -->
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<dependency>
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok</artifactId>
+		    <version>1.18.16</version>
+		    <scope>provided</scope>
+		</dependency>
+		
 
 	</dependencies>
 	
