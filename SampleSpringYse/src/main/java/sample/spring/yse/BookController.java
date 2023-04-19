@@ -48,8 +48,6 @@ public class BookController {
 
 		Map<String, Object> detailMap = this.bookService.detail(map);
 		
-		System.out.println(detailMap + "~~");
-		
 		ModelAndView mav = new ModelAndView();
 		
 		if (detailMap == null) {
@@ -142,6 +140,9 @@ public class BookController {
 		ModelAndView mav = new ModelAndView();
 		mav.addObject("data", list);
 		
+		if (map.containsKey("keyword")) {
+			mav.addObject("keyword", map.get("keyword"));
+		}
 		//list ∫‰∏¶ ∏Æ≈œ«‘
 		mav.setViewName("/book/list");
 		return mav;
